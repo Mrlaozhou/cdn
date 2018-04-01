@@ -10,6 +10,6 @@ class IndexController extends Controller
     //
     public function index (Request $request)
     {
-        dump( app('Dingo\Api\Auth\Auth') );
+        dump( config('api.auth.jwt') );
     }
 }

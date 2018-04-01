@@ -65,7 +65,7 @@ return [
     |
     */
 
-    'timezone' => 'UTC',
+    'timezone' => 'PRC',
 
     /*
     |--------------------------------------------------------------------------
@@ -151,8 +151,7 @@ return [
          * Package Service Providers...
          */
         Barryvdh\Debugbar\ServiceProvider::class,
-//        Tymon\JWTAuth\Providers\JWTAuthServiceProvider::class,
-        Tymon\JWTAuth\Providers\LaravelServiceProvider::class,
+        Tymon\JWTAuth\Providers\JWTAuthServiceProvider::class,
 
         /*
          * Application Service Providers...
@@ -214,8 +213,8 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
 
 
-        'JWTAuth'=> Tymon\JWTAuth\Facades\JWTAuth::class,
-        'JWTFactory'=> Tymon\JWTAuth\Facades\JWTFactory::class,
+        'JWTAuth' => Tymon\JWTAuth\Facades\JWTAuth::class,
+        'JWTFactory' => Tymon\JWTAuth\Facades\JWTFactory::class,
     ],
 
 ];
